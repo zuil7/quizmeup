@@ -1,5 +1,5 @@
 //
-//  MainViewControllerCoordinator.swift
+//  MainControllerCoordinator.swift
 //  QuizMeUp
 //
 //  Created by Louise Nicolas Namoc on 8/12/21.
@@ -8,17 +8,19 @@
 
 import UIKit
 
-final class MainViewControllerCoordinator: Coordinator {
+final class MainControllerCoordinator: Coordinator {
   private(set) var childCoordinator: [Coordinator] = []
 
   private let nav: UINavigationController
-    
+
   init(navigationController: UINavigationController) {
     nav = navigationController
   }
 
   func start() {
-    let vc = R.storyboard.main.mainViewController()!
+    let vm = MainViewModel()
+    let vc = R.storyboard.main.mainController()!
+    vc.viewModel = vm
     nav.setViewControllers([vc], animated: false)
   }
 }

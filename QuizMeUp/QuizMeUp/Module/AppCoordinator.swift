@@ -22,7 +22,7 @@ final class AppCoordinator: Coordinator {
 
   func start() {
     let nav = UINavigationController()
-    let mainViewController = MainViewControllerCoordinator(navigationController: nav)
+    let mainViewController = MainControllerCoordinator(navigationController: nav)
     childCoordinator.append(mainViewController)
     mainViewController.start()
     window.rootViewController = nav
