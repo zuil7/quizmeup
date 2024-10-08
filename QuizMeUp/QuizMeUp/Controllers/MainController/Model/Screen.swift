@@ -8,14 +8,19 @@
 
 import Foundation
 
+enum ScreenType: String, Codable {
+  case multipleChoiceModuleScreen
+  case recapModuleScreen
+}
+
 // MARK: - Screen
 
 struct Screen: Codable {
   let id: String
-  let type: String
+  let type: ScreenType
   let question: String?
   let multipleChoicesAllowed: Bool?
-  let choices: [Choice]?
+  var choices: [Choice]?
   let eyebrow, body: String?
   let answers: [Answer]?
   let correctAnswer: String?

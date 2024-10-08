@@ -14,4 +14,5 @@ struct Choice: Codable {
   let id: String
   let text: String
   let emoji: String
+  var isSelected: Bool? = false
 }

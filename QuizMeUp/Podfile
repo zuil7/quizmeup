@@ -7,11 +7,13 @@ inhibit_all_warnings!
 target 'QuizMeUp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for QuizMeUp
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftLint'
-  pod 'R.swift'
+  pod 'R.swift', '~> 7.3.2'
+  pod 'R.swift.Library'
+  pod 'PureLayout', '~> 3.1.9'
   pod 'Alamofire'
   pod 'AlamofireNetworkActivityLogger'
   pod 'SwiftDate'
@@ -21,6 +23,7 @@ target 'QuizMeUp' do
   pod 'NVActivityIndicatorView/Extended'
   pod 'SwiftyUserDefaults'
   pod 'JGProgressHUD'
+  
 end
 
 post_install do |installer|

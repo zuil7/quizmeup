@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5hi-2W-uC6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,14 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to  Quiz Me Up" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-as-X26">
-                                <rect key="frame" x="16" y="134" width="382" height="95.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="50G-ti-AWT">
+                                <rect key="frame" x="16" y="134" width="382" height="16"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4H0-as-X26" userLabel="Welcome to  Quiz Me Up">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgy-s5-N4G">
+                                        <rect key="frame" x="0.0" y="16" width="382" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfI-w1-Dcd">
-                                <rect key="frame" x="119.5" y="466.5" width="175" height="44"/>
+                                <rect key="frame" x="119.5" y="419" width="175" height="44"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="Fns-AV-FTd"/>
@@ -45,14 +56,18 @@
                         <viewLayoutGuide key="safeArea" id="Rmj-9j-8nx"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="4H0-as-X26" firstAttribute="top" secondItem="Rmj-9j-8nx" secondAttribute="top" constant="86" id="0Dd-gc-e3S"/>
-                            <constraint firstItem="4H0-as-X26" firstAttribute="centerX" secondItem="Rmj-9j-8nx" secondAttribute="centerX" id="1TK-7M-7Py"/>
-                            <constraint firstItem="Rmj-9j-8nx" firstAttribute="trailing" secondItem="4H0-as-X26" secondAttribute="trailing" constant="16" id="JRd-3y-6dO"/>
-                            <constraint firstItem="4H0-as-X26" firstAttribute="leading" secondItem="Rmj-9j-8nx" secondAttribute="leading" constant="16" id="Sos-TD-A8g"/>
-                            <constraint firstItem="IfI-w1-Dcd" firstAttribute="top" secondItem="4H0-as-X26" secondAttribute="bottom" constant="237" id="gva-xP-Afu"/>
-                            <constraint firstItem="IfI-w1-Dcd" firstAttribute="centerX" secondItem="4H0-as-X26" secondAttribute="centerX" id="qFe-xY-Tpg"/>
+                            <constraint firstItem="Rmj-9j-8nx" firstAttribute="trailing" secondItem="50G-ti-AWT" secondAttribute="trailing" constant="16" id="P1w-nW-mIl"/>
+                            <constraint firstItem="50G-ti-AWT" firstAttribute="leading" secondItem="l7G-wc-8cX" secondAttribute="leading" constant="16" id="P8F-JW-sLS"/>
+                            <constraint firstItem="50G-ti-AWT" firstAttribute="top" secondItem="Rmj-9j-8nx" secondAttribute="top" constant="86" id="iH8-BF-UuH"/>
+                            <constraint firstItem="IfI-w1-Dcd" firstAttribute="centerX" secondItem="50G-ti-AWT" secondAttribute="centerX" id="kEf-zI-bbO"/>
+                            <constraint firstItem="IfI-w1-Dcd" firstAttribute="top" secondItem="50G-ti-AWT" secondAttribute="bottom" constant="269" id="och-dC-egm"/>
+                            <constraint firstItem="50G-ti-AWT" firstAttribute="centerX" secondItem="Rmj-9j-8nx" secondAttribute="centerX" id="zfm-ft-b85"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="quizDescriptionLabel" destination="cgy-s5-N4G" id="NWH-zv-bEo"/>
+                        <outlet property="titleLabel" destination="4H0-as-X26" id="1ya-Vw-fSc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDi-ey-zgy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

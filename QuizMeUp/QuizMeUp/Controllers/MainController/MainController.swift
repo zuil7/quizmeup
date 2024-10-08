@@ -11,7 +11,12 @@ import UIKit
 
 final class MainController: ViewController {
   var viewModel: MainViewModelProtocol!
-  var onTapStartButton: VoidResult?
+  var onTapStartButton: DoubleResult<[Screen], Int>?
+
+  override var shouldHideNavBar: Bool { true }
+
+  @IBOutlet private(set) var titleLabel: UILabel!
+  @IBOutlet private(set) var quizDescriptionLabel: UILabel!
 }
 
 // MARK: - Lifecycle
@@ -28,10 +33,31 @@ extension MainController {
 extension MainController {
   func setup() {
     loadJsonFile()
+    populateData()
   }
 
   func loadJsonFile() {
-    viewModel.loadQuiz()
+    viewModel.loadQuiz(onSuccess: handleOnJsonLoadSuccess())
+  }
+}
+
+// MARK: - Handler
+
+extension MainController {
+  func handleOnJsonLoadSuccess() -> VoidResult {
+    return { [weak self] in
+      guard let self else { return }
+      self.populateData()
+    }
+  }
+}
+
+// MARK: - Helper
+
+extension MainController {
+  func populateData() {
+    titleLabel.text = viewModel.title
+    quizDescriptionLabel.text = viewModel.quizDescription
   }
 }
 
@@ -40,5 +66,6 @@ extension MainController {
 private extension MainController {
   @IBAction
   func onStartButtonTapped(_ sender: Any) {
+    onTapStartButton?(viewModel.screens, 1)
   }
 }

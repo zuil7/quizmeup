@@ -9,41 +9,29 @@
 import Foundation
 
 final class RecapViewModel: RecapViewModelProtocol {
-//  var onSomeCallbackEvent: VoidResult?
-//
-//  private(set) var someVariable1: Int = 0
-//
-//  private let model: SomeModel
-//  private let service: SomeService
-//
-//  init(
-//    model: SomeModel,
-//    service: SomeService = App.shared.service
-//  ) {
-//    self.model = model
-//    self.service = service
-//  }
+  var coordinator: RecapNavCoordinator?
+
+  private var screens: [Screen]
+  private var screen: Screen
+  private var index: Int
+
+  init(
+    screens: [Screen],
+    index: Int
+  ) {
+    self.screens = screens
+    self.index = index
+    screen = screens[index]
+  }
 }
 
 // MARK: - Methods
 
 extension RecapViewModel {
-//  func someFunction1(param1: Int) {
-//
-//  }
-//
-//  func someFunction2(
-//    param1: Int,
-//    param2: String,
-//    onSuccess: @escaping VoidResult,
-//    onError: @escaping ErrorResult
-//  ) {
-//
-//  }
+
 }
 
 // MARK: - Getters
 
 extension RecapViewModel {
-//  var someVariable2: String { model.property }
 }

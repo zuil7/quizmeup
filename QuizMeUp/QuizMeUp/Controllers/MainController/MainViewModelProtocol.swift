@@ -9,5 +9,9 @@
 import Foundation
 
 protocol MainViewModelProtocol {
-  func loadQuiz()
+  var title: String { get }
+  var quizDescription: String { get }
+  var screens: [Screen] { get }
+
+  func loadQuiz(onSuccess: @escaping VoidResult)
 }

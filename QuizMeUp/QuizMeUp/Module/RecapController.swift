@@ -10,12 +10,13 @@ import Foundation
 import UIKit
 
 final class RecapController: ViewController {
+  var onDismiss: VoidResult?
   var viewModel: RecapViewModelProtocol!
-  
-  // @IBOutlet private(set) var label: UILabel!
-  // @IBOutlet private(set) var field: APTextField!
-  
-  // private(set) var fieldInputController: MDCInputControllerBase!
+
+  override func closeButtonTapped(_ sender: AnyObject) {
+    onDismiss?()
+    dismiss(animated: true)
+  }
 }
 
 // MARK: - Lifecycle
@@ -33,7 +34,6 @@ extension RecapController {
 
 private extension RecapController {
   func setup() {
-
   }
 }
 
@@ -43,7 +43,6 @@ private extension RecapController {
   // NOTE: Reserve the Bindings extension for Combine/reactive stuff only
 
   func bind() {
-
   }
 }
 
@@ -75,11 +74,10 @@ private extension RecapController {
 // MARK: - Helpers
 
 private extension RecapController {
-
 }
 
 // MARK: - SomeControllerProtocol
 
-//extension RecapController: SomeControllerProtocol {
+// extension RecapController: SomeControllerProtocol {
 //
-//}
+// }

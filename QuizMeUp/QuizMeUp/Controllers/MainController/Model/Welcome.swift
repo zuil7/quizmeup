@@ -9,7 +9,9 @@
 import Foundation
 
 // MARK: - Welcome
-
+struct Message: Codable {
+    let message: String
+}
 struct Welcome: Codable {
   let id: String
   let state: String

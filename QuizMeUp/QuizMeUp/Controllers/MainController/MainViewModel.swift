@@ -9,17 +9,17 @@
 import Foundation
 
 final class MainViewModel: MainViewModelProtocol {
-  init() {
-  }
+  private var welcome: Welcome?
 }
 
 // MARK: - Methods
 
 extension MainViewModel {
-  func loadQuiz() {
+  func loadQuiz(onSuccess: @escaping VoidResult) {
     if let data = loadJSONFromFile(filename: "Quiz"),
        let quiz = decodeJSON(from: data, as: Welcome.self) {
-      debugPrint(quiz)
+      welcome = quiz
+      onSuccess()
     } else {
       print("Failed to load or decode JSON")
     }
@@ -36,7 +36,8 @@ private extension MainViewModel {
     }
 
     do {
-      return try Data(contentsOf: fileURL)
+      let data = try Data(contentsOf: fileURL)
+      return data
     } catch {
       print("Error reading file:", error)
       return nil
@@ -50,5 +51,18 @@ private extension MainViewModel {
       print("Error decoding JSON:", error)
       return nil
     }
+  }
+}
+
+// MARK: - Getter
+
+extension MainViewModel {
+  var title: String { welcome?.title ?? "" }
+  var quizDescription: String {
+    welcome?.description ?? ""
+  }
+
+  var screens: [Screen] {
+    welcome?.activity.screens ?? []
   }
 }

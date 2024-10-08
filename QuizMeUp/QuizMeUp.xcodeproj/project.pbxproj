@@ -20,7 +20,6 @@
 		31E3FF3F26C50018008DAD43 /* FloatClean+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E3FF3E26C50018008DAD43 /* FloatClean+Extension.swift */; };
 		48E29837247A37FC00B6A520 /* QuizMeUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E29836247A37FC00B6A520 /* QuizMeUpTests.swift */; };
 		48E29842247A37FC00B6A520 /* QuizMeUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E29841247A37FC00B6A520 /* QuizMeUpUITests.swift */; };
-		48FD44C524839C0E004975D4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD44BE24839C0E004975D4 /* R.generated.swift */; };
 		48FD44C624839C0E004975D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD44C024839C0E004975D4 /* ViewController.swift */; };
 		48FD44C724839C0E004975D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD44C124839C0E004975D4 /* AppDelegate.swift */; };
 		48FD44C824839C0E004975D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD44C224839C0E004975D4 /* SceneDelegate.swift */; };
@@ -40,7 +39,16 @@
 		B7483A8B2CB4005B001228CB /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483A8A2CB4005B001228CB /* Screen.swift */; };
 		B7483A8D2CB40090001228CB /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483A8C2CB40090001228CB /* Choice.swift */; };
 		B7483A8F2CB400C2001228CB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483A8E2CB400C2001228CB /* Answer.swift */; };
-		B7483A932CB40169001228CB /* Quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = B7483A912CB40169001228CB /* Quiz.json */; };
+		B7483A992CB4253B001228CB /* Quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = B7483A982CB4253B001228CB /* Quiz.json */; };
+		B7483AA42CB4DC58001228CB /* MultipleChoiceViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AA12CB4DC58001228CB /* MultipleChoiceViewModelProtocol.swift */; };
+		B7483AA52CB4DC58001228CB /* MultipleChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AA22CB4DC58001228CB /* MultipleChoiceController.swift */; };
+		B7483AA62CB4DC58001228CB /* MultipleChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AA32CB4DC58001228CB /* MultipleChoiceViewModel.swift */; };
+		B7483AA72CB4DC58001228CB /* MultipleChoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7483AA02CB4DC58001228CB /* MultipleChoice.storyboard */; };
+		B7483AA92CB4E24F001228CB /* RecapNavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AA82CB4E24F001228CB /* RecapNavCoordinator.swift */; };
+		B7483AAB2CB4E261001228CB /* MultipleChoiceNavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AAA2CB4E261001228CB /* MultipleChoiceNavCoordinator.swift */; };
+		B7483AB52CB4F9FE001228CB /* StepProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AB42CB4F9FE001228CB /* StepProgressView.swift */; };
+		B7483AB72CB50327001228CB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AB62CB50327001228CB /* R.generated.swift */; };
+		B7483AB92CB51B97001228CB /* TriggerableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AB82CB51B97001228CB /* TriggerableProtocol.swift */; };
 		B779C7F2271FE6F800AFFE10 /* View+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779C7F1271FE6F800AFFE10 /* View+Design.swift */; };
 		B7F7BDF8F0CE18354CCBF687 /* Pods_QuizMeUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9785DED81433C75186560A01 /* Pods_QuizMeUp.framework */; };
 /* End PBXBuildFile section */
@@ -83,7 +91,6 @@
 		48E2983D247A37FC00B6A520 /* QuizMeUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizMeUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E29841247A37FC00B6A520 /* QuizMeUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizMeUpUITests.swift; sourceTree = "<group>"; };
 		48E29843247A37FC00B6A520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48FD44BE24839C0E004975D4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		48FD44C024839C0E004975D4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48FD44C124839C0E004975D4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FD44C224839C0E004975D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +112,16 @@
 		B7483A8A2CB4005B001228CB /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		B7483A8C2CB40090001228CB /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		B7483A8E2CB400C2001228CB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		B7483A922CB40169001228CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Quiz.json; sourceTree = "<group>"; };
+		B7483A982CB4253B001228CB /* Quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quiz.json; sourceTree = "<group>"; };
+		B7483AA02CB4DC58001228CB /* MultipleChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleChoice.storyboard; sourceTree = "<group>"; };
+		B7483AA12CB4DC58001228CB /* MultipleChoiceViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewModelProtocol.swift; sourceTree = "<group>"; };
+		B7483AA22CB4DC58001228CB /* MultipleChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceController.swift; sourceTree = "<group>"; };
+		B7483AA32CB4DC58001228CB /* MultipleChoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewModel.swift; sourceTree = "<group>"; };
+		B7483AA82CB4E24F001228CB /* RecapNavCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapNavCoordinator.swift; sourceTree = "<group>"; };
+		B7483AAA2CB4E261001228CB /* MultipleChoiceNavCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceNavCoordinator.swift; sourceTree = "<group>"; };
+		B7483AB42CB4F9FE001228CB /* StepProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepProgressView.swift; sourceTree = "<group>"; };
+		B7483AB62CB50327001228CB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		B7483AB82CB51B97001228CB /* TriggerableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerableProtocol.swift; sourceTree = "<group>"; };
 		B779C7F1271FE6F800AFFE10 /* View+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Design.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				31E3FEED26C4F302008DAD43 /* MainControllerCoordinator.swift */,
+				B7483AA82CB4E24F001228CB /* RecapNavCoordinator.swift */,
+				B7483AAA2CB4E261001228CB /* MultipleChoiceNavCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -258,6 +276,7 @@
 		48FD44B724839C0E004975D4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B7483A9F2CB4DBCB001228CB /* MultipleChoiceController */,
 				B7483A6A2CB3F672001228CB /* RecapController */,
 				31E3FEE826C4F2E6008DAD43 /* MainController */,
 			);
@@ -267,6 +286,7 @@
 		48FD44BC24839C0E004975D4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B7483AB32CB4F9C4001228CB /* StepProgressView */,
 				B779C7F0271FE6E700AFFE10 /* Designables */,
 				31E3FF2826C4FF6E008DAD43 /* HelperClasses */,
 				48FD44BD24839C0E004975D4 /* R-Swift */,
@@ -277,7 +297,7 @@
 		48FD44BD24839C0E004975D4 /* R-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				48FD44BE24839C0E004975D4 /* R.generated.swift */,
+				B7483AB62CB50327001228CB /* R.generated.swift */,
 			);
 			path = "R-Swift";
 			sourceTree = "<group>";
@@ -298,6 +318,7 @@
 			children = (
 				31E3FEF726C4F5C2008DAD43 /* Alias.swift */,
 				31E3FEFC26C4F678008DAD43 /* Enums.swift */,
+				B7483AB82CB51B97001228CB /* TriggerableProtocol.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -329,9 +350,9 @@
 			isa = PBXGroup;
 			children = (
 				B7483A6B2CB3F68C001228CB /* Recap.storyboard */,
-				B7483A6C2CB3F68C001228CB /* RecapViewModelProtocol.swift */,
 				B7483A6D2CB3F68C001228CB /* RecapController.swift */,
 				B7483A6E2CB3F68C001228CB /* RecapViewModel.swift */,
+				B7483A6C2CB3F68C001228CB /* RecapViewModelProtocol.swift */,
 			);
 			path = RecapController;
 			sourceTree = "<group>";
@@ -339,9 +360,28 @@
 		B7483A902CB40118001228CB /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				B7483A912CB40169001228CB /* Quiz.json */,
+				B7483A982CB4253B001228CB /* Quiz.json */,
 			);
 			path = Json;
+			sourceTree = "<group>";
+		};
+		B7483A9F2CB4DBCB001228CB /* MultipleChoiceController */ = {
+			isa = PBXGroup;
+			children = (
+				B7483AA02CB4DC58001228CB /* MultipleChoice.storyboard */,
+				B7483AA22CB4DC58001228CB /* MultipleChoiceController.swift */,
+				B7483AA32CB4DC58001228CB /* MultipleChoiceViewModel.swift */,
+				B7483AA12CB4DC58001228CB /* MultipleChoiceViewModelProtocol.swift */,
+			);
+			path = MultipleChoiceController;
+			sourceTree = "<group>";
+		};
+		B7483AB32CB4F9C4001228CB /* StepProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				B7483AB42CB4F9FE001228CB /* StepProgressView.swift */,
+			);
+			path = StepProgressView;
 			sourceTree = "<group>";
 		};
 		B779C7F0271FE6E700AFFE10 /* Designables */ = {
@@ -435,8 +475,9 @@
 		48E29814247A37F900B6A520 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1540;
 				ORGANIZATIONNAME = "Louise Nicolas Namoc";
 				TargetAttributes = {
 					48E2981B247A37F900B6A520 = {
@@ -480,8 +521,9 @@
 				B7483A722CB3F68C001228CB /* Recap.storyboard in Resources */,
 				B7483A7C2CB3FC5A001228CB /* Main.storyboard in Resources */,
 				48FD44D524839CFA004975D4 /* Color.xcassets in Resources */,
-				B7483A932CB40169001228CB /* Quiz.json in Resources */,
+				B7483AA72CB4DC58001228CB /* MultipleChoice.storyboard in Resources */,
 				48FD44CF24839C7A004975D4 /* Assets.xcassets in Resources */,
+				B7483A992CB4253B001228CB /* Quiz.json in Resources */,
 				48FD44D024839C7A004975D4 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7483AB92CB51B97001228CB /* TriggerableProtocol.swift in Sources */,
 				31E3FEE426C4F0E5008DAD43 /* AppCoordinator.swift in Sources */,
 				31E3FF2A26C4FF7D008DAD43 /* ProgesssHud.swift in Sources */,
 				B7483A862CB3FFE7001228CB /* Welcome.swift in Sources */,
@@ -596,7 +639,11 @@
 				31E3FF0226C4F844008DAD43 /* SwiftyUserDefaults+Extension.swift in Sources */,
 				B779C7F2271FE6F800AFFE10 /* View+Design.swift in Sources */,
 				B7483A8D2CB40090001228CB /* Choice.swift in Sources */,
+				B7483AA42CB4DC58001228CB /* MultipleChoiceViewModelProtocol.swift in Sources */,
+				B7483AA52CB4DC58001228CB /* MultipleChoiceController.swift in Sources */,
+				B7483AA62CB4DC58001228CB /* MultipleChoiceViewModel.swift in Sources */,
 				B7483A892CB40029001228CB /* Activity.swift in Sources */,
+				B7483AA92CB4E24F001228CB /* RecapNavCoordinator.swift in Sources */,
 				B7483A6F2CB3F68C001228CB /* RecapViewModelProtocol.swift in Sources */,
 				B7483A702CB3F68C001228CB /* RecapController.swift in Sources */,
 				B7483A712CB3F68C001228CB /* RecapViewModel.swift in Sources */,
@@ -604,12 +651,14 @@
 				48FD44C824839C0E004975D4 /* SceneDelegate.swift in Sources */,
 				31E3FEFD26C4F678008DAD43 /* Enums.swift in Sources */,
 				31E3FF3F26C50018008DAD43 /* FloatClean+Extension.swift in Sources */,
+				B7483AB72CB50327001228CB /* R.generated.swift in Sources */,
 				48FD44C724839C0E004975D4 /* AppDelegate.swift in Sources */,
+				B7483AAB2CB4E261001228CB /* MultipleChoiceNavCoordinator.swift in Sources */,
 				48FD44C624839C0E004975D4 /* ViewController.swift in Sources */,
 				31E3FE9E26C4EBA9008DAD43 /* BaseService.swift in Sources */,
 				31E3FEEE26C4F302008DAD43 /* MainControllerCoordinator.swift in Sources */,
-				48FD44C524839C0E004975D4 /* R.generated.swift in Sources */,
 				B7483A802CB3FED8001228CB /* MainViewModelProtocol.swift in Sources */,
+				B7483AB52CB4F9FE001228CB /* StepProgressView.swift in Sources */,
 				B7483A8B2CB4005B001228CB /* Screen.swift in Sources */,
 				B7483A822CB3FED8001228CB /* MainViewModel.swift in Sources */,
 				31E3FF1426C4FB66008DAD43 /* JSONDecoder+Extension.swift in Sources */,
@@ -658,14 +707,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		B7483A912CB40169001228CB /* Quiz.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B7483A922CB40169001228CB /* en */,
-			);
-			name = Quiz.json;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -706,6 +747,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -767,6 +809,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
