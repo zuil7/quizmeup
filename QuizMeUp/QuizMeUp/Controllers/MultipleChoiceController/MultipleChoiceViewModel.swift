@@ -6,6 +6,7 @@
 //  Copyright © 2024 Louise Nicolas Namoc. All rights reserved.
 //
 
+import Combine
 import Foundation
 
 final class MultipleChoiceViewModel: MultipleChoiceViewModelProtocol {
@@ -15,6 +16,8 @@ final class MultipleChoiceViewModel: MultipleChoiceViewModelProtocol {
   var coordinator: MultipleChoiceNavCoordinator?
 
   private var screens: [Screen]
+  @Published private var choicesList: [Choice]
+
   private var screen: Screen
   private var index: Int
 
@@ -25,6 +28,7 @@ final class MultipleChoiceViewModel: MultipleChoiceViewModelProtocol {
     self.screens = screens
     self.index = index
     screen = screens[index]
+    choicesList = screens[index].choices ?? []
   }
 }
 
@@ -33,17 +37,11 @@ final class MultipleChoiceViewModel: MultipleChoiceViewModelProtocol {
 extension MultipleChoiceViewModel {
   func updateChoice(at index: Int) {
     if isMultipleChoice {
-      if var choice = screen.choices {
-        choice[index].isSelected = !(choice[index].isSelected ?? false)
-        screen.choices?[index] = choice[index]
-      }
+      choicesList[index].isSelected = !(choicesList[index].isSelected ?? false)
 
       refresh?()
     } else {
-      if var choice = screen.choices {
-        choice[index].isSelected = !(choice[index].isSelected ?? false)
-        screen.choices?[index] = choice[index]
-      }
+      choicesList[index].isSelected = !(choicesList[index].isSelected ?? false)
       onNextScreen?()
     }
   }
@@ -56,6 +54,13 @@ extension MultipleChoiceViewModel {
   var quizTotal: Int { screens.count }
   var isMultipleChoice: Bool { screen.multipleChoicesAllowed ?? false }
   var questionText: String { screen.question ?? "" }
-  var choices: [Choice] { screen.choices ?? [] }
+  var choices: [Choice] { choicesList }
   var nextIndex: Int { currentIndex + 1 }
+  var canSubmit: AnyPublisher<Bool, Never> {
+    $choicesList
+      .map { options in
+          options.contains(where: { $0.isSelected ?? false })
+      }
+      .eraseToAnyPublisher()
+  }
 }

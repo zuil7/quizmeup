@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import Combine
 
 protocol MultipleChoiceViewModelProtocol {
   var refresh: VoidResult? { get set }
   var onNextScreen: VoidResult? { get set }
 
+  var canSubmit: AnyPublisher<Bool, Never> { get }
   var currentIndex: Int { get }
   var nextIndex: Int { get }
 

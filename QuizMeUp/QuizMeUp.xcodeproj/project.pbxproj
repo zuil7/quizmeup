@@ -49,6 +49,7 @@
 		B7483AB52CB4F9FE001228CB /* StepProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AB42CB4F9FE001228CB /* StepProgressView.swift */; };
 		B7483AB72CB50327001228CB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AB62CB50327001228CB /* R.generated.swift */; };
 		B7483AB92CB51B97001228CB /* TriggerableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AB82CB51B97001228CB /* TriggerableProtocol.swift */; };
+		B7483ABB2CB52B49001228CB /* Publisher+WeakAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483ABA2CB52B49001228CB /* Publisher+WeakAssign.swift */; };
 		B779C7F2271FE6F800AFFE10 /* View+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779C7F1271FE6F800AFFE10 /* View+Design.swift */; };
 		B7F7BDF8F0CE18354CCBF687 /* Pods_QuizMeUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9785DED81433C75186560A01 /* Pods_QuizMeUp.framework */; };
 /* End PBXBuildFile section */
@@ -122,6 +123,7 @@
 		B7483AB42CB4F9FE001228CB /* StepProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepProgressView.swift; sourceTree = "<group>"; };
 		B7483AB62CB50327001228CB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		B7483AB82CB51B97001228CB /* TriggerableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerableProtocol.swift; sourceTree = "<group>"; };
+		B7483ABA2CB52B49001228CB /* Publisher+WeakAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+WeakAssign.swift"; sourceTree = "<group>"; };
 		B779C7F1271FE6F800AFFE10 /* View+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Design.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -331,6 +333,7 @@
 				31E3FF1326C4FB66008DAD43 /* JSONDecoder+Extension.swift */,
 				31E3FF1826C4FE2D008DAD43 /* NSError+Extension.swift */,
 				31E3FF3E26C50018008DAD43 /* FloatClean+Extension.swift */,
+				B7483ABA2CB52B49001228CB /* Publisher+WeakAssign.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 		};
 		48FD44B0248399A3004975D4 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -635,6 +639,7 @@
 				31E3FF2A26C4FF7D008DAD43 /* ProgesssHud.swift in Sources */,
 				B7483A862CB3FFE7001228CB /* Welcome.swift in Sources */,
 				B7483A8F2CB400C2001228CB /* Answer.swift in Sources */,
+				B7483ABB2CB52B49001228CB /* Publisher+WeakAssign.swift in Sources */,
 				31E3FF0926C4FA4A008DAD43 /* ISO8601+DateFormatter.swift in Sources */,
 				31E3FF0226C4F844008DAD43 /* SwiftyUserDefaults+Extension.swift in Sources */,
 				B779C7F2271FE6F800AFFE10 /* View+Design.swift in Sources */,

@@ -6,6 +6,7 @@
 //  Copyright © 2024 Louise Nicolas Namoc. All rights reserved.
 //
 
+import Combine
 import Foundation
 import PureLayout
 import UIKit
@@ -20,6 +21,8 @@ final class MultipleChoiceController: ViewController {
   @IBOutlet private(set) var choicesStackView: UIStackView!
   @IBOutlet private(set) var continueButton: UIButton!
   @IBOutlet private(set) var selectAllApplyLabel: UILabel!
+
+  private var anyCancellables = Set<AnyCancellable>()
 
   override var shouldShowProgressBar: Bool { true }
 
@@ -82,6 +85,19 @@ private extension MultipleChoiceController {
   func bind() {
     viewModel.refresh = trigger(type(of: self).setupChoicesStackView)
     viewModel.onNextScreen = trigger(type(of: self).handleOnNexScreen)
+    bindButton()
+  }
+
+  func bindButton() {
+    viewModel.canSubmit
+      .receive(on: DispatchQueue.main)
+      .sink { [weak self] canSubmit in
+        guard let self else { return }
+        self.continueButton.isEnabled = canSubmit
+        let color = canSubmit ? R.color.purple_6442EF()! : R.color.purpleDisable_DDD5FB()!
+        self.continueButton.backgroundColor = color
+      }
+      .store(in: &anyCancellables)
   }
 }
 
@@ -90,6 +106,7 @@ private extension MultipleChoiceController {
 private extension MultipleChoiceController {
   @IBAction
   func continueButtonTapped(_ sender: Any) {
+    onNextScreen?(viewModel.nextIndex)
   }
 
   // Define the tap handler function
