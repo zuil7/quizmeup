@@ -1,6 +1,7 @@
 # QuizMeUp App Test
 
-Video showing the app flow
+I record the finished app.
+Click the link of video to show the app flow
 https://github.com/user-attachments/assets/d78d5531-ef31-4bfb-9ebe-3dc52425811a
 
 <img src="https://i.ibb.co/gMN5zY2/Screenshot-2024-10-09-at-1-57-59-PM.png" alt="Screen-Shot-2021-08-13-at-5-10-31-PM" border="0" width="188">&nbsp;&nbsp;
