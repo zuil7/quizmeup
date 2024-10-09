@@ -8,3 +8,5 @@
 
 correct.answer  = "You're correct!";
 wrong.answer  = "Try again";
+error.title = "Error Info";
+error.generic.title = "Error Encountered.";

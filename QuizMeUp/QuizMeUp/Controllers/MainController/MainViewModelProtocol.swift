@@ -14,4 +14,5 @@ protocol MainViewModelProtocol {
   var screens: [Screen] { get }
 
   func loadQuiz(onSuccess: @escaping VoidResult)
+  func fetchQuiz(completion: @escaping APIClientResultClosure)
 }

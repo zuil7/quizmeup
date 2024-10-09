@@ -18,7 +18,7 @@ final class MainControllerCoordinator: Coordinator {
   }
 
   func start() {
-    let vm = MainViewModel()
+    let vm = MainViewModel(quizService: QuizService())
     let vc = R.storyboard.main.mainController()!
     vc.onTapStartButton = handleStartButtonTapped()
 

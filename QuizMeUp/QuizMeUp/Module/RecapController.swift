@@ -78,7 +78,7 @@ private extension RecapController {
     label.text = "________"
     label.textAlignment = .center
     label.font = paragraphFont
-    label.textColor = .black
+    label.textColor = R.color.gray_A2A2A2()!
     label.backgroundColor = .clear
 
     createRecapQuestionLabel(

@@ -32,8 +32,9 @@ extension MainController {
 
 extension MainController {
   func setup() {
-    loadJsonFile()
-    populateData()
+    fetchQuiz()
+//    loadJsonFile()
+//    populateData()
   }
 
   func loadJsonFile() {
@@ -55,9 +56,33 @@ extension MainController {
 // MARK: - Helper
 
 extension MainController {
+  func fetchQuiz() {
+    showHud()
+    viewModel.fetchQuiz(completion: handleQuizSucces())
+  }
+
   func populateData() {
     titleLabel.text = viewModel.title
     quizDescriptionLabel.text = viewModel.quizDescription
+  }
+}
+
+// MARK: Event Handler
+
+private extension MainController {
+  func handleQuizSucces() -> APIClientResultClosure {
+    return { [weak self] status, message in
+      guard let self else { return }
+      self.dismissHud()
+      guard status else {
+        self.showAlert(
+          title: R.string.localizable.errorTitle(),
+          message: message ?? R.string.localizable.errorGenericTitle()
+        )
+        return
+      }
+      self.populateData()
+    }
   }
 }
 

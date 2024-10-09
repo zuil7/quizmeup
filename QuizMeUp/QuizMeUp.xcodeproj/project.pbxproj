@@ -63,6 +63,9 @@
 		B7E3DF522CB62FBB00192BF9 /* AnswerChecker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E3DF4B2CB62FBB00192BF9 /* AnswerChecker.storyboard */; };
 		B7E3DF562CB635D100192BF9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7E3DF542CB635D100192BF9 /* Localizable.strings */; };
 		B7E3DF582CB6448200192BF9 /* confetti.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7E3DF572CB6448200192BF9 /* confetti.gif */; };
+		B7E3DF5C2CB648CC00192BF9 /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF5A2CB648CC00192BF9 /* QuizService.swift */; };
+		B7E3DF5D2CB648CC00192BF9 /* QuizServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF5B2CB648CC00192BF9 /* QuizServiceProtocol.swift */; };
+		B7E3DF5F2CB6499900192BF9 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF5E2CB6499900192BF9 /* EndPoints.swift */; };
 		B7F7BDF8F0CE18354CCBF687 /* Pods_QuizMeUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9785DED81433C75186560A01 /* Pods_QuizMeUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +152,9 @@
 		B7E3DF4E2CB62FBB00192BF9 /* AnswerCheckerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCheckerViewModel.swift; sourceTree = "<group>"; };
 		B7E3DF552CB635D100192BF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B7E3DF572CB6448200192BF9 /* confetti.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = confetti.gif; sourceTree = "<group>"; };
+		B7E3DF5A2CB648CC00192BF9 /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
+		B7E3DF5B2CB648CC00192BF9 /* QuizServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizServiceProtocol.swift; sourceTree = "<group>"; };
+		B7E3DF5E2CB6499900192BF9 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +308,7 @@
 		48FD44B724839C0E004975D4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B7E3DF592CB648B500192BF9 /* Services */,
 				B7E3DF4A2CB62F7700192BF9 /* AnswerCheckController */,
 				B7483A9F2CB4DBCB001228CB /* MultipleChoiceController */,
 				B7483A6A2CB3F672001228CB /* RecapController */,
@@ -348,6 +355,7 @@
 				31E3FEF726C4F5C2008DAD43 /* Alias.swift */,
 				31E3FEFC26C4F678008DAD43 /* Enums.swift */,
 				B7483AB82CB51B97001228CB /* TriggerableProtocol.swift */,
+				B7E3DF5E2CB6499900192BF9 /* EndPoints.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -477,6 +485,15 @@
 				B7E3DF542CB635D100192BF9 /* Localizable.strings */,
 			);
 			path = Language;
+			sourceTree = "<group>";
+		};
+		B7E3DF592CB648B500192BF9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B7E3DF5A2CB648CC00192BF9 /* QuizService.swift */,
+				B7E3DF5B2CB648CC00192BF9 /* QuizServiceProtocol.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		BDA85CC4FE816C8AD9B5FDCE /* Pods */ = {
@@ -742,6 +759,7 @@
 				B7483AA92CB4E24F001228CB /* RecapNavCoordinator.swift in Sources */,
 				B7483A6F2CB3F68C001228CB /* RecapViewModelProtocol.swift in Sources */,
 				B7483A702CB3F68C001228CB /* RecapController.swift in Sources */,
+				B7E3DF5F2CB6499900192BF9 /* EndPoints.swift in Sources */,
 				B7483A712CB3F68C001228CB /* RecapViewModel.swift in Sources */,
 				B7483A7A2CB3FC5A001228CB /* MainController.swift in Sources */,
 				48FD44C824839C0E004975D4 /* SceneDelegate.swift in Sources */,
@@ -752,6 +770,8 @@
 				B7483AAB2CB4E261001228CB /* MultipleChoiceNavCoordinator.swift in Sources */,
 				48FD44C624839C0E004975D4 /* ViewController.swift in Sources */,
 				31E3FE9E26C4EBA9008DAD43 /* BaseService.swift in Sources */,
+				B7E3DF5C2CB648CC00192BF9 /* QuizService.swift in Sources */,
+				B7E3DF5D2CB648CC00192BF9 /* QuizServiceProtocol.swift in Sources */,
 				31E3FEEE26C4F302008DAD43 /* MainControllerCoordinator.swift in Sources */,
 				B7483A802CB3FED8001228CB /* MainViewModelProtocol.swift in Sources */,
 				B7483AB52CB4F9FE001228CB /* StepProgressView.swift in Sources */,

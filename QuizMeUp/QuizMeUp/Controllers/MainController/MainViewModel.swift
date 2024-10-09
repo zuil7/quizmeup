@@ -10,11 +10,25 @@ import Foundation
 
 final class MainViewModel: MainViewModelProtocol {
   private var welcome: Welcome?
+  private var quizService: QuizServiceProtocol
+
+  init(quizService: QuizServiceProtocol) {
+    self.quizService = quizService
+  }
 }
 
 // MARK: - Methods
 
 extension MainViewModel {
+  func fetchQuiz(
+    completion: @escaping APIClientResultClosure) {
+    quizService.getQuiz { [weak self] welcome, status, message in
+      guard let self, status else { return completion(false, message) }
+      self.welcome = welcome
+      completion(true, nil)
+    }
+  }
+
   func loadQuiz(onSuccess: @escaping VoidResult) {
     if let welcome: Welcome = loadJSONFromFile(
       filename: "Quiz",
@@ -48,7 +62,6 @@ extension MainViewModel {
       .replacingOccurrences(of: "2ï¸âƒ£", with: "2️⃣🔄") // Fix emoji
       .replacingOccurrences(of: "ðŸ¤¯", with: "😤") // Fix emoji
 
-    // Add more replacements as necessary
     return fixed
   }
 }
