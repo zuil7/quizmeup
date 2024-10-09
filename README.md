@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/d78d5531-ef31-4bfb-9ebe-3dc52425811a
 2. I made the screens dynamic that can cater Recap and Multiple choice. 
 3. Add progress bar on the navigation bar to show the progress.
 4. Add confetti to play the animation if answer is correct.
-5. I have also implemented the loading of json.file but i comment it out to give way to network service demonstration. If you want to test it just uncomment
+5. I have also implemented the loading of json.file but i comment it out to give way to network service demonstration. If you want to test it just got to MainController.swift and follow the code below.
 ```swift
  func setup() {
  //   fetchQuiz()
