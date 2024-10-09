@@ -107,6 +107,13 @@ extension ViewController {
   func dismissHud() {
     ProgressHud.shared.dismiss()
   }
+
+  // MARK: - Delay
+
+  func delay(_ seconds: Double, task: @escaping VoidResult) {
+    let when = DispatchTime.now() + seconds
+    DispatchQueue.main.asyncAfter(deadline: when, execute: task)
+  }
 }
 
 extension ViewController: UIGestureRecognizerDelegate {

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,27 +18,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SL-SU-wCS">
-                                <rect key="frame" x="186" y="438" width="48" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Recap" translatesAutoresizingMaskIntoConstraints="NO" id="rn9-Fj-RqV">
+                                <rect key="frame" x="24" y="49" width="63" height="18"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Fill in the blank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUy-jx-pQS">
+                                <rect key="frame" x="24" y="75" width="366" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xES-LQ-YEe">
+                                <rect key="frame" x="16" y="125.5" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="Gray_212121_20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="46u-Gq-JUU">
+                                <rect key="frame" x="16" y="255" width="382" height="591"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gaf-EU-7Hd" customClass="DynmicHeightCollectionView" customModule="QuizMeUp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="591"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="591" id="FyR-kT-kqn"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="591" id="ypA-YD-rwl"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DDT-vY-PMg" customClass="DynamicFlowLayout" customModule="QuizMeUp" customModuleProvider="target">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHF-ew-3Ck">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="54"/>
+                                        <color key="backgroundColor" name="Purple_6442EF"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="8eS-s5-ybE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Check"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="checkButtonTapped:" destination="5hi-2W-uC6" eventType="touchUpInside" id="fhf-Fn-b8w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rmj-9j-8nx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8SL-SU-wCS" firstAttribute="centerX" secondItem="Rmj-9j-8nx" secondAttribute="centerX" constant="3" id="MB3-nx-a53"/>
-                            <constraint firstItem="8SL-SU-wCS" firstAttribute="centerY" secondItem="Rmj-9j-8nx" secondAttribute="centerY" constant="-6.5" id="Yrh-CG-eVu"/>
+                            <constraint firstItem="Rmj-9j-8nx" firstAttribute="bottom" secondItem="46u-Gq-JUU" secondAttribute="bottom" constant="16" id="45j-TY-FtF"/>
+                            <constraint firstItem="rn9-Fj-RqV" firstAttribute="leading" secondItem="Rmj-9j-8nx" secondAttribute="leading" constant="24" id="6dm-kG-Q5w"/>
+                            <constraint firstItem="xES-LQ-YEe" firstAttribute="top" secondItem="MUy-jx-pQS" secondAttribute="bottom" constant="30" id="G2D-eV-0LA"/>
+                            <constraint firstItem="Rmj-9j-8nx" firstAttribute="trailing" secondItem="MUy-jx-pQS" secondAttribute="trailing" constant="24" id="Ju9-c7-e0h"/>
+                            <constraint firstItem="MUy-jx-pQS" firstAttribute="top" secondItem="rn9-Fj-RqV" secondAttribute="bottom" constant="8" id="LAY-7N-99m"/>
+                            <constraint firstItem="rn9-Fj-RqV" firstAttribute="top" secondItem="Rmj-9j-8nx" secondAttribute="top" constant="1" id="NUv-2b-HOH"/>
+                            <constraint firstItem="46u-Gq-JUU" firstAttribute="top" secondItem="xES-LQ-YEe" secondAttribute="bottom" constant="39" id="VgN-lb-EfB"/>
+                            <constraint firstItem="xES-LQ-YEe" firstAttribute="leading" secondItem="Rmj-9j-8nx" secondAttribute="leading" constant="16" id="Vlo-bv-K8F"/>
+                            <constraint firstItem="MUy-jx-pQS" firstAttribute="leading" secondItem="Rmj-9j-8nx" secondAttribute="leading" constant="24" id="Wk1-Ne-iQ6"/>
+                            <constraint firstItem="46u-Gq-JUU" firstAttribute="leading" secondItem="Rmj-9j-8nx" secondAttribute="leading" constant="16" id="r1K-9Y-d81"/>
+                            <constraint firstItem="Rmj-9j-8nx" firstAttribute="trailing" secondItem="46u-Gq-JUU" secondAttribute="trailing" constant="16" id="rJg-Ey-Bir"/>
+                            <constraint firstItem="Rmj-9j-8nx" firstAttribute="trailing" secondItem="xES-LQ-YEe" secondAttribute="trailing" constant="16" id="v5L-x9-C3F"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="checkButton" destination="sHF-ew-3Ck" id="WR5-gX-UzO"/>
+                        <outlet property="collectionView" destination="gaf-EU-7Hd" id="Nlg-gZ-Dnx"/>
+                        <outlet property="questionLabel" destination="xES-LQ-YEe" id="hRm-Zl-Gic"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDi-ey-zgy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="-50"/>
+            <point key="canvasLocation" x="-130.43478260869566" y="-50.223214285714285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Recap" width="63" height="18"/>
+        <namedColor name="Gray_212121_20">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Purple_6442EF">
+            <color red="0.39215686274509803" green="0.25882352941176473" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

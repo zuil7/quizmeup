@@ -23,6 +23,7 @@ target 'QuizMeUp' do
   pod 'NVActivityIndicatorView/Extended'
   pod 'SwiftyUserDefaults'
   pod 'JGProgressHUD'
+  pod 'SwiftyGif'
   
 end
 

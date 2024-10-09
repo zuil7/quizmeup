@@ -66,6 +66,6 @@ extension MainController {
 private extension MainController {
   @IBAction
   func onStartButtonTapped(_ sender: Any) {
-    onTapStartButton?(viewModel.screens, 1)
+    onTapStartButton?(viewModel.screens, 0)
   }
 }

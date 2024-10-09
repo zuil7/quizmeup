@@ -21,7 +21,8 @@ struct Screen: Codable {
   let question: String?
   let multipleChoicesAllowed: Bool?
   var choices: [Choice]?
-  let eyebrow, body: String?
-  let answers: [Answer]?
+  let eyebrow: String?
+  let body: String?
+  var answers: [Answer]?
   let correctAnswer: String?
 }

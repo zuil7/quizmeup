@@ -8,6 +8,7 @@ disabled_rules: # rule identifiers to exclude from running
   - trailing_whitespace
   - type_body_length
   - valid_ibinspectable
+  - line_length
 # These are paths to ignore during linting. Takes precedence over `included`.
 excluded:
   - Pods

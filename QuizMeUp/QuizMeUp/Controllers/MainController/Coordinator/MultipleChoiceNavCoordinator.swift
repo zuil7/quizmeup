@@ -60,6 +60,10 @@ final class MultipleChoiceNavCoordinator: Coordinator, TriggerableProtocol {
 
 private extension MultipleChoiceNavCoordinator {
   func pushNextScreen(nextIndex: Int) {
+    guard screens.count > nextIndex else {
+      navRouter.dismiss(animated: true)
+      return
+    }
     loadScreen(screens: screens, index: nextIndex)
   }
 
@@ -84,6 +88,7 @@ private extension MultipleChoiceNavCoordinator {
     )
     let vc = R.storyboard.recap.recapController()!
     vc.onDismiss = didDismiss()
+    vc.onNextScreen = trigger(type(of: self).pushNextScreen)
     vc.viewModel = vm
     nav?.pushViewController(vc, animated: true)
   }

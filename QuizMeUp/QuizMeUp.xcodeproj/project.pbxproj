@@ -39,7 +39,6 @@
 		B7483A8B2CB4005B001228CB /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483A8A2CB4005B001228CB /* Screen.swift */; };
 		B7483A8D2CB40090001228CB /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483A8C2CB40090001228CB /* Choice.swift */; };
 		B7483A8F2CB400C2001228CB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483A8E2CB400C2001228CB /* Answer.swift */; };
-		B7483A992CB4253B001228CB /* Quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = B7483A982CB4253B001228CB /* Quiz.json */; };
 		B7483AA42CB4DC58001228CB /* MultipleChoiceViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AA12CB4DC58001228CB /* MultipleChoiceViewModelProtocol.swift */; };
 		B7483AA52CB4DC58001228CB /* MultipleChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AA22CB4DC58001228CB /* MultipleChoiceController.swift */; };
 		B7483AA62CB4DC58001228CB /* MultipleChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AA32CB4DC58001228CB /* MultipleChoiceViewModel.swift */; };
@@ -50,7 +49,20 @@
 		B7483AB72CB50327001228CB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AB62CB50327001228CB /* R.generated.swift */; };
 		B7483AB92CB51B97001228CB /* TriggerableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483AB82CB51B97001228CB /* TriggerableProtocol.swift */; };
 		B7483ABB2CB52B49001228CB /* Publisher+WeakAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7483ABA2CB52B49001228CB /* Publisher+WeakAssign.swift */; };
+		B7483ABD2CB53B61001228CB /* Quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = B7483ABC2CB53B61001228CB /* Quiz.json */; };
 		B779C7F2271FE6F800AFFE10 /* View+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B779C7F1271FE6F800AFFE10 /* View+Design.swift */; };
+		B7E3DF3C2CB55DE200192BF9 /* DynmicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF3B2CB55DE200192BF9 /* DynmicHeightCollectionView.swift */; };
+		B7E3DF3F2CB55EFB00192BF9 /* DynamicFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF3E2CB55EFB00192BF9 /* DynamicFlowLayout.swift */; };
+		B7E3DF462CB5604700192BF9 /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E3DF452CB5604700192BF9 /* AnswerCell.xib */; };
+		B7E3DF472CB5604700192BF9 /* AnswerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF422CB5604700192BF9 /* AnswerCellViewModel.swift */; };
+		B7E3DF482CB5604700192BF9 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF432CB5604700192BF9 /* AnswerCell.swift */; };
+		B7E3DF492CB5604700192BF9 /* AnswerCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF442CB5604700192BF9 /* AnswerCellViewModelProtocol.swift */; };
+		B7E3DF4F2CB62FBB00192BF9 /* AnswerCheckerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF4C2CB62FBB00192BF9 /* AnswerCheckerViewModelProtocol.swift */; };
+		B7E3DF502CB62FBB00192BF9 /* AnswerCheckerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF4D2CB62FBB00192BF9 /* AnswerCheckerController.swift */; };
+		B7E3DF512CB62FBB00192BF9 /* AnswerCheckerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E3DF4E2CB62FBB00192BF9 /* AnswerCheckerViewModel.swift */; };
+		B7E3DF522CB62FBB00192BF9 /* AnswerChecker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E3DF4B2CB62FBB00192BF9 /* AnswerChecker.storyboard */; };
+		B7E3DF562CB635D100192BF9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7E3DF542CB635D100192BF9 /* Localizable.strings */; };
+		B7E3DF582CB6448200192BF9 /* confetti.gif in Resources */ = {isa = PBXBuildFile; fileRef = B7E3DF572CB6448200192BF9 /* confetti.gif */; };
 		B7F7BDF8F0CE18354CCBF687 /* Pods_QuizMeUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9785DED81433C75186560A01 /* Pods_QuizMeUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,7 +125,6 @@
 		B7483A8A2CB4005B001228CB /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		B7483A8C2CB40090001228CB /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		B7483A8E2CB400C2001228CB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		B7483A982CB4253B001228CB /* Quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quiz.json; sourceTree = "<group>"; };
 		B7483AA02CB4DC58001228CB /* MultipleChoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultipleChoice.storyboard; sourceTree = "<group>"; };
 		B7483AA12CB4DC58001228CB /* MultipleChoiceViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewModelProtocol.swift; sourceTree = "<group>"; };
 		B7483AA22CB4DC58001228CB /* MultipleChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceController.swift; sourceTree = "<group>"; };
@@ -124,7 +135,20 @@
 		B7483AB62CB50327001228CB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		B7483AB82CB51B97001228CB /* TriggerableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerableProtocol.swift; sourceTree = "<group>"; };
 		B7483ABA2CB52B49001228CB /* Publisher+WeakAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+WeakAssign.swift"; sourceTree = "<group>"; };
+		B7483ABC2CB53B61001228CB /* Quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quiz.json; sourceTree = "<group>"; };
 		B779C7F1271FE6F800AFFE10 /* View+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Design.swift"; sourceTree = "<group>"; };
+		B7E3DF3B2CB55DE200192BF9 /* DynmicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynmicHeightCollectionView.swift; sourceTree = "<group>"; };
+		B7E3DF3E2CB55EFB00192BF9 /* DynamicFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFlowLayout.swift; sourceTree = "<group>"; };
+		B7E3DF422CB5604700192BF9 /* AnswerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCellViewModel.swift; sourceTree = "<group>"; };
+		B7E3DF432CB5604700192BF9 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		B7E3DF442CB5604700192BF9 /* AnswerCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		B7E3DF452CB5604700192BF9 /* AnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerCell.xib; sourceTree = "<group>"; };
+		B7E3DF4B2CB62FBB00192BF9 /* AnswerChecker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnswerChecker.storyboard; sourceTree = "<group>"; };
+		B7E3DF4C2CB62FBB00192BF9 /* AnswerCheckerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCheckerViewModelProtocol.swift; sourceTree = "<group>"; };
+		B7E3DF4D2CB62FBB00192BF9 /* AnswerCheckerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCheckerController.swift; sourceTree = "<group>"; };
+		B7E3DF4E2CB62FBB00192BF9 /* AnswerCheckerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCheckerViewModel.swift; sourceTree = "<group>"; };
+		B7E3DF552CB635D100192BF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B7E3DF572CB6448200192BF9 /* confetti.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = confetti.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +302,7 @@
 		48FD44B724839C0E004975D4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B7E3DF4A2CB62F7700192BF9 /* AnswerCheckController */,
 				B7483A9F2CB4DBCB001228CB /* MultipleChoiceController */,
 				B7483A6A2CB3F672001228CB /* RecapController */,
 				31E3FEE826C4F2E6008DAD43 /* MainController */,
@@ -288,6 +313,8 @@
 		48FD44BC24839C0E004975D4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B7E3DF3D2CB55EE900192BF9 /* DynamicFlowLayout */,
+				B7E3DF3A2CB55DC200192BF9 /* DynmicHeightCollectionView */,
 				B7483AB32CB4F9C4001228CB /* StepProgressView */,
 				B779C7F0271FE6E700AFFE10 /* Designables */,
 				31E3FF2826C4FF6E008DAD43 /* HelperClasses */,
@@ -341,6 +368,8 @@
 		48FD44C924839C7A004975D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B7E3DF572CB6448200192BF9 /* confetti.gif */,
+				B7E3DF532CB635B900192BF9 /* Language */,
 				B7483A902CB40118001228CB /* Json */,
 				48FD44CA24839C7A004975D4 /* Assets.xcassets */,
 				48FD44D424839CFA004975D4 /* Color.xcassets */,
@@ -352,6 +381,7 @@
 		B7483A6A2CB3F672001228CB /* RecapController */ = {
 			isa = PBXGroup;
 			children = (
+				B7E3DF402CB5602300192BF9 /* Component */,
 				B7483A6B2CB3F68C001228CB /* Recap.storyboard */,
 				B7483A6D2CB3F68C001228CB /* RecapController.swift */,
 				B7483A6E2CB3F68C001228CB /* RecapViewModel.swift */,
@@ -363,7 +393,7 @@
 		B7483A902CB40118001228CB /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				B7483A982CB4253B001228CB /* Quiz.json */,
+				B7483ABC2CB53B61001228CB /* Quiz.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -393,6 +423,60 @@
 				B779C7F1271FE6F800AFFE10 /* View+Design.swift */,
 			);
 			path = Designables;
+			sourceTree = "<group>";
+		};
+		B7E3DF3A2CB55DC200192BF9 /* DynmicHeightCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B7E3DF3B2CB55DE200192BF9 /* DynmicHeightCollectionView.swift */,
+			);
+			path = DynmicHeightCollectionView;
+			sourceTree = "<group>";
+		};
+		B7E3DF3D2CB55EE900192BF9 /* DynamicFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B7E3DF3E2CB55EFB00192BF9 /* DynamicFlowLayout.swift */,
+			);
+			path = DynamicFlowLayout;
+			sourceTree = "<group>";
+		};
+		B7E3DF402CB5602300192BF9 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				B7E3DF412CB5603000192BF9 /* Cell */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		B7E3DF412CB5603000192BF9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7E3DF452CB5604700192BF9 /* AnswerCell.xib */,
+				B7E3DF432CB5604700192BF9 /* AnswerCell.swift */,
+				B7E3DF422CB5604700192BF9 /* AnswerCellViewModel.swift */,
+				B7E3DF442CB5604700192BF9 /* AnswerCellViewModelProtocol.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B7E3DF4A2CB62F7700192BF9 /* AnswerCheckController */ = {
+			isa = PBXGroup;
+			children = (
+				B7E3DF4B2CB62FBB00192BF9 /* AnswerChecker.storyboard */,
+				B7E3DF4D2CB62FBB00192BF9 /* AnswerCheckerController.swift */,
+				B7E3DF4E2CB62FBB00192BF9 /* AnswerCheckerViewModel.swift */,
+				B7E3DF4C2CB62FBB00192BF9 /* AnswerCheckerViewModelProtocol.swift */,
+			);
+			path = AnswerCheckController;
+			sourceTree = "<group>";
+		};
+		B7E3DF532CB635B900192BF9 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				B7E3DF542CB635D100192BF9 /* Localizable.strings */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 		BDA85CC4FE816C8AD9B5FDCE /* Pods */ = {
@@ -526,8 +610,12 @@
 				48FD44D524839CFA004975D4 /* Color.xcassets in Resources */,
 				B7483AA72CB4DC58001228CB /* MultipleChoice.storyboard in Resources */,
 				48FD44CF24839C7A004975D4 /* Assets.xcassets in Resources */,
-				B7483A992CB4253B001228CB /* Quiz.json in Resources */,
+				B7E3DF562CB635D100192BF9 /* Localizable.strings in Resources */,
+				B7483ABD2CB53B61001228CB /* Quiz.json in Resources */,
+				B7E3DF522CB62FBB00192BF9 /* AnswerChecker.storyboard in Resources */,
+				B7E3DF582CB6448200192BF9 /* confetti.gif in Resources */,
 				48FD44D024839C7A004975D4 /* LaunchScreen.storyboard in Resources */,
+				B7E3DF462CB5604700192BF9 /* AnswerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +727,9 @@
 				31E3FF2A26C4FF7D008DAD43 /* ProgesssHud.swift in Sources */,
 				B7483A862CB3FFE7001228CB /* Welcome.swift in Sources */,
 				B7483A8F2CB400C2001228CB /* Answer.swift in Sources */,
+				B7E3DF472CB5604700192BF9 /* AnswerCellViewModel.swift in Sources */,
+				B7E3DF482CB5604700192BF9 /* AnswerCell.swift in Sources */,
+				B7E3DF492CB5604700192BF9 /* AnswerCellViewModelProtocol.swift in Sources */,
 				B7483ABB2CB52B49001228CB /* Publisher+WeakAssign.swift in Sources */,
 				31E3FF0926C4FA4A008DAD43 /* ISO8601+DateFormatter.swift in Sources */,
 				31E3FF0226C4F844008DAD43 /* SwiftyUserDefaults+Extension.swift in Sources */,
@@ -664,11 +755,16 @@
 				31E3FEEE26C4F302008DAD43 /* MainControllerCoordinator.swift in Sources */,
 				B7483A802CB3FED8001228CB /* MainViewModelProtocol.swift in Sources */,
 				B7483AB52CB4F9FE001228CB /* StepProgressView.swift in Sources */,
+				B7E3DF3C2CB55DE200192BF9 /* DynmicHeightCollectionView.swift in Sources */,
+				B7E3DF4F2CB62FBB00192BF9 /* AnswerCheckerViewModelProtocol.swift in Sources */,
+				B7E3DF502CB62FBB00192BF9 /* AnswerCheckerController.swift in Sources */,
+				B7E3DF512CB62FBB00192BF9 /* AnswerCheckerViewModel.swift in Sources */,
 				B7483A8B2CB4005B001228CB /* Screen.swift in Sources */,
 				B7483A822CB3FED8001228CB /* MainViewModel.swift in Sources */,
 				31E3FF1426C4FB66008DAD43 /* JSONDecoder+Extension.swift in Sources */,
 				31E3FF1926C4FE2D008DAD43 /* NSError+Extension.swift in Sources */,
 				31E3FEF826C4F5C2008DAD43 /* Alias.swift in Sources */,
+				B7E3DF3F2CB55EFB00192BF9 /* DynamicFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +806,14 @@
 				48FD44CC24839C7A004975D4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B7E3DF542CB635D100192BF9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7E3DF552CB635D100192BF9 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
